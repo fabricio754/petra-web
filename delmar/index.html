@@ -44,10 +44,18 @@ p.sub{margin:8px 0 24px;font-size:16px;line-height:1.5;color:#555B69}
   var ua=navigator.userAgent||'';
   var inApp=/musical_ly|BytedanceWebview|TikTok|trill|Instagram|FBAN|FBAV|FB_IAB/i.test(ua);
   if(!inApp)return;
-  document.getElementById('guia').style.display='block';
-  document.getElementById('walabel').textContent='Mantén presionado aquí';
-  document.getElementById('ayuda').innerHTML='¿No te sale «Abrir enlace»? Toca los tres puntos <b>⋯</b> arriba y elige «Abrir en navegador».';
-  document.getElementById('wa').addEventListener('click',function(e){e.preventDefault();var g=document.getElementById('guia');g.style.borderWidth='3px';g.scrollIntoView({behavior:'smooth',block:'center'});});
+  var android=/Android/i.test(ua);
+  var g=document.getElementById('guia');
+  if(android){
+    g.innerHTML='<div style="text-align:right;font-size:28px;line-height:1;color:#E8834A;margin:-4px 0 4px">&#8599;</div><strong>Para abrir WhatsApp:</strong><br>1. Toca los tres puntos <b>⋯</b> arriba a la derecha<br>2. Elige <b>«Abrir en navegador»</b><br>3. Toca el botón verde';
+    var m=document.querySelector('main');m.insertBefore(g,m.firstChild);g.style.margin='0 0 20px';
+    document.getElementById('ayuda').innerHTML='También puedes copiar el número y escribirme directo en WhatsApp.';
+  }else{
+    document.getElementById('walabel').textContent='Mantén presionado aquí';
+    document.getElementById('ayuda').innerHTML='¿No te sale «Abrir enlace»? Toca los tres puntos <b>⋯</b> arriba y elige «Abrir en navegador».';
+    document.getElementById('wa').addEventListener('click',function(e){e.preventDefault();g.style.borderWidth='3px';g.scrollIntoView({behavior:'smooth',block:'center'});});
+  }
+  g.style.display='block';
 })();
 </script>
 <script>
