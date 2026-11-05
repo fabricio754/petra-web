@@ -34,8 +34,32 @@ p.sub{margin:8px 0 24px;font-size:16px;line-height:1.5;color:#555B69}
     <span>318 141 9767</span>
     <button class="copy" id="copy" type="button">Copiar</button>
   </div>
-  <p class="ayuda">¿No abre? Toca los tres puntos arriba y elige «Abrir en navegador».</p>
+  <p class="ayuda" id="ayuda">¿No abre? Toca los tres puntos arriba y elige «Abrir en navegador».</p>
 </main>
+<script>
+(function(){
+  var tel='573181419767', msg='Hola Valentina, quiero entender cómo funciona Petra';
+  var web='https://wa.me/'+tel+'?text='+encodeURIComponent(msg);
+  var ua=navigator.userAgent||'';
+  var android=/Android/i.test(ua), ios=/iPhone|iPad|iPod/i.test(ua);
+  var inApp=/musical_ly|BytedanceWebview|TikTok|Instagram|FBAN|FBAV|FB_IAB/i.test(ua);
+  var a=document.getElementById('wa');
+  if(android){
+    a.href='intent://send/?phone='+tel+'&text='+encodeURIComponent(msg)+'#Intent;scheme=whatsapp;package=com.whatsapp;S.browser_fallback_url='+encodeURIComponent(web)+';end';
+  }else if(ios&&inApp){
+    a.href='whatsapp://send?phone='+tel+'&text='+encodeURIComponent(msg);
+  }
+  a.addEventListener('click',function(){
+    if(!(android||ios)||!inApp)return;
+    setTimeout(function(){
+      if(document.hidden)return;
+      var h=document.getElementById('ayuda');
+      h.innerHTML='<strong>Si no se abrió WhatsApp:</strong> toca los tres puntos <b>⋯</b> arriba a la derecha y elige <b>«Abrir en navegador»</b>.';
+      h.style.cssText='margin:18px 0 0;font-size:15px;line-height:1.5;color:#111318;background:#FFF4E5;border:1px solid #E8834A;border-radius:12px;padding:12px';
+    },2000);
+  });
+})();
+</script>
 <script>
 document.getElementById('copy').addEventListener('click',function(){
   var b=this,t='3181419767';
