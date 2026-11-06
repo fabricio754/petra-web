@@ -69,12 +69,11 @@ body{margin:0;background:#F8F8FB;color:#111318;font-family:-apple-system,BlinkMa
   var op3=document.getElementById('op3-texto');
   if(android){
     // En Android dentro de TikTok/Instagram el botón no abre WhatsApp: primero hay que salir al navegador.
-    op1.innerHTML='Toca los tres puntos <b>⋯</b> arriba a la derecha, elige <b>«Abrir en navegador»</b> y luego toca el botón verde.';
-    op2.hidden=false;
-    document.getElementById('op2-texto').innerHTML='Guarda mi contacto y búscame en WhatsApp como <b>«Del Mar · Petra»</b>.';
-    document.getElementById('op2').appendChild(document.getElementById('contacto'));
-    document.getElementById('contacto').hidden=false;
-    op3.textContent='Escríbeme directo a mi WhatsApp:';
+    // Sin botón: aquí la persona lo toca y no pasa nada. Primero tiene que salir al navegador.
+    op1.innerHTML='Toca los tres puntos <b>⋯</b> arriba a la derecha y elige <b>«Abrir en navegador»</b>.';
+    document.getElementById('wa').hidden=true;
+    document.getElementById('op3-n').textContent='2';
+    op3.textContent='O escríbeme directo a mi WhatsApp:';
   }else{
     op1.innerHTML='<b>Mantén presionado</b> el botón verde y elige <b>«Abrir enlace»</b>.';
     document.getElementById('walabel').textContent='Mantén presionado aquí';
