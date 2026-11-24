@@ -53,6 +53,7 @@ body{margin:0;background:#F8F8FB;color:#111318;font-family:-apple-system,BlinkMa
     <a class="contacto" id="contacto" href="/delmar.vcf" download="Del Mar Petra.vcf" hidden>Guardar mi contacto</a>
   </section>
 </main>
+<script>function petraC(e){try{navigator.sendBeacon('https://petra-staging.onrender.com/_c/web/'+e)}catch(x){}}petraC('visita');</script>
 <script>
 (function(){
   var ua=navigator.userAgent||'';
@@ -68,11 +69,17 @@ body{margin:0;background:#F8F8FB;color:#111318;font-family:-apple-system,BlinkMa
   var op2=document.getElementById('op2');
   var op3=document.getElementById('op3-texto');
   if(android){
-    // En Android dentro de TikTok/Instagram el botón no abre WhatsApp: primero hay que salir al navegador.
-    // Sin botón: aquí la persona lo toca y no pasa nada. Primero tiene que salir al navegador.
-    op1.innerHTML='Toca los tres puntos <b>⋯</b> arriba a la derecha y elige <b>«Abrir en navegador»</b>.';
-    document.getElementById('wa').hidden=true;
-    document.getElementById('op3-n').textContent='2';
+    // Android dentro de TikTok/Instagram: el enlace normal no abre WhatsApp.
+    // Probamos abrir la app directo con intent://; si no abre, quedan las instrucciones de respaldo.
+    var wa=document.getElementById('wa');
+    var q=wa.href.split('?')[1]||'';
+    var txt=(q.match(/text=([^&]*)/)||[])[1]||'';
+    var fallback=encodeURIComponent(wa.href);
+    wa.href='intent://send/?phone=573181419767&text='+txt+'#Intent;scheme=whatsapp;S.browser_fallback_url='+fallback+';end';
+    op1.innerHTML='Toca el botón verde y se abre WhatsApp:';
+    document.getElementById('walabel').textContent='Abrir WhatsApp';
+    op2.hidden=false;
+    document.getElementById('op2-texto').innerHTML='¿No se abrió? Toca los tres puntos <b>⋯</b> arriba a la derecha, elige <b>«Abrir en navegador»</b> y vuelve a tocar el botón.';
     op3.textContent='O escríbeme directo a mi WhatsApp:';
   }else{
     op1.innerHTML='<b>Mantén presionado</b> el botón verde y elige <b>«Abrir enlace»</b>.';
@@ -89,7 +96,8 @@ body{margin:0;background:#F8F8FB;color:#111318;font-family:-apple-system,BlinkMa
 })();
 </script>
 <script>
-document.getElementById('copy').addEventListener('click',function(){
+document.getElementById('wa').addEventListener('click',function(){petraC('toque')});
+document.getElementById('copy').addEventListener('click',function(){petraC('copia');
   var b=this,t='3181419767';
   function ok(){b.textContent='Copiado';setTimeout(function(){b.textContent='Copiar'},2000)}
   if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,fb)}else{fb()}
