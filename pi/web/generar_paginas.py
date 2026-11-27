@@ -303,11 +303,16 @@ WA_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0
 
 
 def ga_head():
+    """Etiqueta de Google. Acepta un ID de GA4 (G-...) o una etiqueta de Google nueva (GTM-... / GT-...)."""
     gid = S.get("ga4_id")
+    base = "window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}"
     if not gid:
-        return "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}</script>"
+        return f"<script>{base}</script>"
+    if gid.startswith("GTM-"):
+        return (f'<script async src="https://www.googletagmanager.com/gtm.js?id={e(gid)}"></script>'
+                f"<script>{base}gtag('js',new Date());</script>")
     return (f'<script async src="https://www.googletagmanager.com/gtag/js?id={e(gid)}"></script>'
-            f"<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag('js',new Date());gtag('config','{e(gid)}');</script>")
+            f"<script>{base}gtag('js',new Date());gtag('config','{e(gid)}');</script>")
 
 
 def meta_head(titulo, desc, ruta, og_img, og_tipo="website", robots="index,follow"):
