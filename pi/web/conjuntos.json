@@ -1,0 +1,178 @@
+{
+  "sitio": {
+    "dominio": "https://soypetra.com",
+    "marca": "PETRA",
+    "whatsapp": "573022493823",
+    "whatsapp_nombre": "Sofía",
+    "telefono_visible": "302 249 3823",
+    "horario": "lunes a viernes, de 8 a. m. a 5 p. m.",
+    "ga4_id": "",
+    "google_site_verification": "",
+    "og_imagen_defecto": "img/chat.jpg"
+  },
+  "conjuntos": [
+    {
+      "codigo": "1011",
+      "publicar": true,
+      "nombre": "Torres de Sevilla II",
+      "abreviatura": "TS2",
+      "tipo_conjunto": "apartamentos",
+      "ciudad": "Bogotá",
+      "barrio": "Colina Campestre",
+      "localidad": "Suba",
+      "direccion": "Carrera 72 Bis # 152B-32",
+      "mapa": "https://maps.app.goo.gl/R3fD9wNufktx2q8L8",
+      "zonas_comunes": [],
+      "fotos": [
+        {
+          "origen": "https://raw.githubusercontent.com/fabricio754/petra-videos/videos/conjuntos/1011/503c36432bb249179cab7ddedcfaa32f.jpg",
+          "alt": "Cartelera de la administración de Torres de Sevilla II con el afiche QR de PETRA para ver inmuebles en arriendo y venta"
+        },
+        {
+          "origen": "https://raw.githubusercontent.com/fabricio754/petra-videos/videos/conjuntos/1011/0eb449b5bc624523940cb494d350244f.jpg",
+          "alt": "QR de PETRA en el escritorio de la administración de Torres de Sevilla II, Colina Campestre, Suba"
+        }
+      ],
+      "videos": [],
+      "texto": [
+        "Torres de Sevilla II es un conjunto residencial de apartamentos ubicado en la Carrera 72 Bis # 152B-32, en el sector de Colina Campestre, localidad de Suba, en el noroccidente de Bogotá. Es un conjunto grande, organizado por bloques, con apartamentos familiares que en su mayoría tienen tres alcobas, dos baños, balcón, parqueadero y depósito, además de penthouse en los pisos altos.",
+        "Quien vive en Torres de Sevilla II valora la tranquilidad de una zona residencial sin perder la conexión con el resto de la ciudad. El conjunto queda junto a la Avenida Boyacá, uno de los ejes principales del occidente de Bogotá, por donde pasan rutas del SITP hacia el norte, hacia la Calle 80 y hacia el centro. Desde allí también se conecta con la troncal de TransMilenio de la Avenida Suba y con las vías que llevan a la Autopista Norte.",
+        "En los alrededores hay colegios, jardines infantiles, supermercados, droguerías, panaderías y comercio de barrio, y a pocos minutos están centros comerciales del sector como Parque La Colina. Es una buena opción para familias que buscan espacio, para parejas que quieren su primer apartamento propio y para quienes trabajan en el norte de la ciudad.",
+        "La administración del conjunto trabaja con PETRA: en la cartelera y en la oficina de administración hay un código QR para ver los apartamentos que están en arriendo y en venta. Abajo encuentras el inventario actualizado. Si un precio aparece como «consultar», escríbenos por WhatsApp y te contamos el valor, te enviamos fotos y te agendamos la visita con una Agente PETRA del conjunto."
+      ],
+      "inmuebles": [
+        {"ref": "TS2-V01", "tipo": "apartamento", "operacion": "venta", "bloque": "B9", "piso": 7, "verificar": "Código leído del cuaderno como «Bg-704»; confirmar bloque."},
+        {"ref": "TS2-V02", "tipo": "apartamento", "operacion": "venta", "bloque": "B5", "piso": 8, "verificar": "Código leído del cuaderno como «BS-801»; confirmar bloque."},
+        {"ref": "TS2-V03", "tipo": "apartamento", "operacion": "venta", "bloque": "B6", "piso": 4},
+        {"ref": "TS2-V04", "tipo": "apartamento", "operacion": "venta", "bloque": "B5", "piso": 3, "verificar": "Código leído del cuaderno como «Bs-303»; confirmar bloque."},
+        {"ref": "TS2-V05", "tipo": "apartamento", "operacion": "venta", "bloque": "AA", "piso": 7, "verificar": "Código leído del cuaderno como «AA-703»; confirmar bloque."},
+        {"ref": "TS2-V06", "tipo": "apartamento", "operacion": "venta", "bloque": "A1", "piso": 3, "verificar": "Código leído del cuaderno como «A1 304»; confirmar bloque."},
+        {"ref": "TS2-V07", "tipo": "apartamento", "operacion": "venta", "bloque": "A2", "piso": 5},
+        {"ref": "TS2-A01", "tipo": "apartamento", "operacion": "arriendo", "habitaciones": 3, "banos": 2, "m2": 107, "caracteristicas": ["Balcón"], "verificar": "En el cuaderno no tiene bloque ni piso."},
+        {"ref": "TS2-A02", "tipo": "penthouse", "operacion": "arriendo", "bloque": "B10", "piso": 8, "habitaciones": 3, "banos": 3, "caracteristicas": ["Exterior", "2 parqueaderos", "3 balcones", "Depósito"]},
+        {"ref": "TS2-A03", "tipo": "apartamento", "operacion": "arriendo", "bloque": "B6", "piso": 2, "habitaciones": 3, "banos": 2, "m2": 83, "caracteristicas": ["Interior", "Parqueadero", "2 balcones", "Depósito"]},
+        {"ref": "TS2-A04", "tipo": "apartamento", "operacion": "arriendo", "bloque": "B9", "piso": 4, "habitaciones": 3, "banos": 2, "caracteristicas": ["Parqueadero", "2 balcones", "Depósito"]}
+      ]
+    },
+    {
+      "codigo": "1023",
+      "publicar": true,
+      "nombre": "Ciudad Tintal SM3 SL1",
+      "nombre_corto": "Ciudad Tintal",
+      "abreviatura": "CT1",
+      "tipo_conjunto": "casas",
+      "ciudad": "Bogotá",
+      "barrio": "Nueva Castilla",
+      "localidad": "Kennedy",
+      "direccion": "Calle 8A Bis # 94-23",
+      "mapa": "https://maps.app.goo.gl/uvoTJJ1sjsT71oEr6",
+      "zonas_comunes": [],
+      "fotos": [
+        {
+          "origen": "https://raw.githubusercontent.com/fabricio754/petra-videos/videos/conjuntos/1023/2cbcbb88d00647ac8e3a1891bf1e7553.png",
+          "alt": "Portería de Ciudad Tintal Supermanzana 3 Superlote 1 con el afiche QR de PETRA en la ventana"
+        }
+      ],
+      "videos": [],
+      "texto": [
+        "Ciudad Tintal SM3 SL1 es un conjunto residencial de casas en la Calle 8A Bis # 94-23, en el barrio Nueva Castilla, dentro del sector de El Tintal, en la localidad de Kennedy, al occidente de Bogotá. Hace parte de la urbanización Ciudad Tintal, organizada en supermanzanas (SM) y superlotes (SL), con casas y portería propia.",
+        "El Tintal es una de las zonas mejor planeadas del occidente de la ciudad. El conjunto está a pocas cuadras de la Avenida Ciudad de Cali y cerca de la Avenida de las Américas, por donde pasa TransMilenio. El Portal de las Américas y las rutas del SITP que salen hacia Kennedy, Bosa, Fontibón y el centro quedan a un trayecto corto, así que moverse al trabajo o a la universidad es sencillo.",
+        "Muy cerca está la Biblioteca Pública El Tintal Manuel Zapata Olivella, sobre la Avenida Ciudad de Cali, con programas para niños, jóvenes y adultos, y el centro comercial Tintal Plaza, con supermercado, cine, bancos y restaurantes. Alrededor también hay parques de barrio, ciclorrutas, colegios, jardines infantiles, droguerías y comercio de todo tipo.",
+        "Es un conjunto buscado por familias que necesitan más espacio que el de un apartamento y quieren seguir en una zona con servicios a la mano. En la cartelera de la portería suele haber casas en venta y habitaciones en arriendo. La administración trabaja con PETRA, y en la portería hay un código QR para ver la oferta del conjunto. Escríbenos por WhatsApp, cuéntanos si buscas comprar o arrendar, y te enviamos lo disponible con fotos, precio y horario de visita con una Agente PETRA."
+      ],
+      "inmuebles": []
+    },
+    {
+      "codigo": "1024",
+      "publicar": true,
+      "nombre": "Alameda del Parque",
+      "abreviatura": "ADP",
+      "tipo_conjunto": "casas",
+      "ciudad": "Bogotá",
+      "barrio": "Alameda del Parque",
+      "localidad": "",
+      "direccion": "Calle 74 Sur # 83A-45",
+      "mapa": "https://maps.app.goo.gl/JxmUkAnkyUjaV1Wb9",
+      "zonas_comunes": [],
+      "fotos": [
+        {
+          "origen": "https://raw.githubusercontent.com/fabricio754/petra-videos/videos/conjuntos/1024/7e6faeb567ba4fd1860baa70d4895ef0.jpg",
+          "alt": "QR de PETRA sobre el mostrador de la portería del conjunto Alameda del Parque, Bogotá"
+        }
+      ],
+      "videos": [],
+      "texto": [],
+      "inmuebles": []
+    },
+    {
+      "codigo": "1027",
+      "publicar": true,
+      "nombre": "Anillo 1 Santa Cecilia",
+      "nombre_corto": "Anillo 1",
+      "abreviatura": "AN1",
+      "tipo_conjunto": "apartamentos",
+      "ciudad": "Bogotá",
+      "barrio": "Santa Cecilia",
+      "localidad": "",
+      "direccion": "Carrera 77 # 52B-43",
+      "mapa": "",
+      "zonas_comunes": [],
+      "fotos": [],
+      "videos": [],
+      "texto": [],
+      "inmuebles": [],
+      "verificar": "La base dice: verificar dirección (¿52B-34 como el Anillo 2?)."
+    },
+    {
+      "codigo": "1029",
+      "publicar": false,
+      "nombre": "Anillo 2",
+      "tipo_conjunto": "apartamentos",
+      "ciudad": "Bogotá",
+      "barrio": "",
+      "direccion": "Carrera 77 # 52B-34",
+      "mapa": "",
+      "zonas_comunes": [], "fotos": [], "videos": [], "texto": [], "inmuebles": []
+    },
+    {
+      "codigo": "1030",
+      "publicar": false,
+      "nombre": "Anillo 3",
+      "tipo_conjunto": "apartamentos",
+      "ciudad": "Bogotá",
+      "barrio": "",
+      "direccion": "",
+      "mapa": "",
+      "zonas_comunes": [], "fotos": [], "videos": [], "texto": [], "inmuebles": []
+    },
+    {
+      "codigo": "1026",
+      "publicar": false,
+      "nombre": "Anillo 4",
+      "tipo_conjunto": "apartamentos",
+      "ciudad": "Bogotá",
+      "barrio": "",
+      "direccion": "",
+      "mapa": "",
+      "zonas_comunes": [], "fotos": [], "videos": [], "texto": [], "inmuebles": []
+    },
+    {
+      "codigo": "1008",
+      "publicar": false,
+      "nombre": "Parque Residencial Sabana Grande",
+      "nota": "Etapas 1A (1008), 1B (1013), 1C (1014) y 1D (1009).",
+      "tipo_conjunto": "casas",
+      "ciudad": "Bogotá",
+      "barrio": "",
+      "direccion": "",
+      "mapa": "https://maps.app.goo.gl/vTbD4C6GZX2PTK2w8",
+      "zonas_comunes": [], "fotos": [], "videos": [], "texto": [], "inmuebles": []
+    }
+  ],
+  "redirecciones": {
+    "inmobiliaria": "conjuntos",
+    "inmobiliaria/torres-de-sevilla-ii": "conjuntos/torres-de-sevilla-ii-bogota",
+    "inmobiliaria/ciudad-tintal": "conjuntos/ciudad-tintal-sm3-sl1-bogota",
+    "inmobiliaria/sabana-grande": "ciudades/bogota"
+  }
+}
